@@ -19,7 +19,7 @@ function Chat() {
 
   useEffect(() => {
 
-    const socket = io("http://localhost:3001/");
+    const socket = io("https://chat-app-server-nm76.onrender.com");
     setNewSocket(socket)
 
     socket.on("connect", () => {
